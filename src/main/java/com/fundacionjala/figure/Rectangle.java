@@ -5,7 +5,7 @@ package com.fundacionjala.figure;
  */
 public class Rectangle extends Shape {
 
-    public static final int FACTOR_FORMULA = 2;
+    private static final int FACTOR_FORMULA = 2;
 
     private final double sideA;
 

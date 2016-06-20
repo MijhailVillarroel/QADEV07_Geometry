@@ -4,30 +4,30 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static com.fundacionjala.figure.Constant.DELTA;
 
 /**
- * Created by mijhailvillarroel on 6/16/2016.
+ * Tests for {@link Circle}
  */
 public class TestCircle {
-
-    private static final double RADIO = 5.5;
 
     private Shape circle;
 
     @Before
     public void setup() {
-        circle = new Circle(RADIO);
+        final double radio = 5.5;
+        circle = new Circle(radio);
     }
 
     @Test
     public void testCalculateArea() {
         final double expectResultArea = 95.0334;
-        assertEquals(expectResultArea, circle.calculateArea(), Constant.DELTA);
+        assertEquals(expectResultArea, circle.calculateArea(), DELTA);
     }
 
     @Test
     public void testCalculatePerimeter() {
         final double expectResultPerimeter = 34.55;
-        assertEquals(expectResultPerimeter, circle.calculatePerimeter(), Constant.DELTA);
+        assertEquals(expectResultPerimeter, circle.calculatePerimeter(), DELTA);
     }
 }

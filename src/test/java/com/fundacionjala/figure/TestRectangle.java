@@ -4,32 +4,31 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static com.fundacionjala.figure.Constant.DELTA;
 
 /**
  * Created by mijhailvillarroel on 6/16/2016.
  */
 public class TestRectangle {
 
-    private static final double SIDE_A = 5.2;
-
-    private static final double SIDE_B = 6.2;
-
     private Shape rectangle;
 
     @Before
     public void setup() {
-        rectangle = new Rectangle(SIDE_A, SIDE_B);
+        final double sideA = 5.2;
+        final double sideB = 6.2;
+        rectangle = new Rectangle(sideA, sideB);
     }
 
     @Test
     public void testCalculateArea() {
         final double expectResultArea = 32.24;
-        assertEquals(expectResultArea, rectangle.calculateArea(), Constant.DELTA);
+        assertEquals(expectResultArea, rectangle.calculateArea(), DELTA);
     }
 
     @Test
     public void testCalculatePerimeter() {
-        final double expectResultPerimeterPerimeter = 22.8;
-        assertEquals(expectResultPerimeterPerimeter, rectangle.calculatePerimeter(), Constant.DELTA);
+        final double expectResultPerimeter = 22.8;
+        assertEquals(expectResultPerimeter, rectangle.calculatePerimeter(), DELTA);
     }
 }

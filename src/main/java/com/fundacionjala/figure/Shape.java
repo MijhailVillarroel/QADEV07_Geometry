@@ -1,12 +1,22 @@
 package com.fundacionjala.figure;
 
 /**
- * Created by mijhailvillarroel on 6/16/2016.
+ * this ........
+ *
+ * @author Mijhail villarroel
  */
 public abstract class Shape {
 
+    /**
+     * Calc.,.....
+     *
+     * @return area
+     */
     public abstract double calculateArea();
 
+    /**
+     *
+     * @return
+     */
     public abstract double calculatePerimeter();
-
 }
