@@ -21,6 +21,6 @@ public class Rectangle extends Shape {
     }
 
     public double calculatePerimeter() {
-        return (FACTOR_FORMULA * sideA) + (FACTOR_FORMULA * sideB);
+        return FACTOR_FORMULA * (sideA + sideB);
     }
 }

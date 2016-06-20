@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class TestCircle {
 
-    public static final double RADIO = 5.5;
+    private static final double RADIO = 5.5;
 
     private Shape circle;
 
