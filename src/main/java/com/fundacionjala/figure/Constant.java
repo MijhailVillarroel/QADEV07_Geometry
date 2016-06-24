@@ -1,9 +1,11 @@
 package com.fundacionjala.figure;
 
 /**
- * Created by mijhailvillarroel on 6/16/2016.
+ * There is only constant
+ *
+ * @author Mijhail villarroel
  */
-public class Constant {
+public final class Constant {
 
     public static final int DELTA = 1;
 

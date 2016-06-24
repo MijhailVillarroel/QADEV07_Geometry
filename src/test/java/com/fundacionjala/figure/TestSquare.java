@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 import static com.fundacionjala.figure.Constant.DELTA;
 
 /**
- * Created by mijhailvillarroel on 6/16/2016.
+ * Tests for {@link Square}
  */
 public class TestSquare {
 
